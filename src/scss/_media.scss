@@ -1,0 +1,221 @@
+@media (max-width: 1366px) {
+  .aside {
+    padding-right: 30px;
+    margin-right: 50px;
+  }
+  .aside__logo {
+    padding: 0 0 53px 10px;
+  }
+  .table {
+    width: 768px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aside {
+    padding-right: 10px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .App__wrapper {
+    position: relative;
+    justify-content: flex-end;
+    width: auto;
+    max-width: none;
+  }
+  .aside {
+    width: 180px;
+    position: absolute;
+    left: 10px;
+    height: 100vh;
+    margin-right: 10px;
+    padding: 0;
+  }
+  .aside__list {
+    padding: 0;
+  }
+  .aside__logo {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .aside__logo-title {
+    font-size: 22px;
+  }
+  .aside__list-item {
+    justify-content: start;
+  }
+  .aside__user {
+    padding-left: 5px;
+  }
+  .App__content {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .table {
+    width: 724px;
+  }
+}
+@media (max-width: 1016px) {
+  .App__wrapper {
+    justify-content: center;
+  }
+  .aside {
+    transform: translateX(-150%);
+    transition: all ease-in-out 0.3s;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .App__content {
+    header {
+      text-align: left;
+      margin-bottom: 20px;
+      .aside__user {
+        display: block;
+      }
+      .aside__user-subtitle {
+        display: none;
+      }
+    }
+  }
+  .App__burger {
+    display: block;
+  }
+}
+@media (max-width: 838px) {
+  .table {
+    width: auto;
+    padding: 30px 10px;
+  }
+
+  .table__users-list {
+    width: 100%;
+  }
+  .table__users-list thead,
+  .table__users-list tbody,
+  .table__users-list thead th,
+  .table__users-list tbody td {
+    display: block;
+    text-align: center;
+  }
+  .table__users-list thead {
+    float: left;
+    background: rgba(#5932ea, 0.8);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .table__users-list tbody {
+    overflow-x: scroll;
+    max-width: 600px;
+  }
+  .table__users-list tbody tr {
+    display: table-cell;
+  }
+  .table__users-header th {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+  .table__header {
+    margin-bottom: 0;
+  }
+  .table__users-item {
+    border-top: none;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .table__users-item td {
+    padding: 35px 20px 35px;
+  }
+  .table__users-header th:nth-child(1) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .table__users-header th:nth-child(2) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .table__users-header th:nth-child(3) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .table__users-header th:nth-child(4) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .table__users-header th:nth-child(5) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .table__users-header th:nth-child(6) {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 35px;
+    width: auto;
+  }
+  .table__pages {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-view {
+      margin-bottom: 10px;
+    }
+  }
+  .table__users-active div,
+  .table__users-inactive div {
+    padding: 0;
+    border: none;
+  }
+}
+@media (max-width: 630px) {
+  .table {
+    max-width: 550px;
+  }
+  .table__users-list tbody {
+    max-width: 550px;
+  }
+}
+@media (max-width: 580px) {
+  .table__header {
+    align-items: center;
+    flex-direction: column;
+  }
+  .table__header-info p {
+    text-align: center;
+  }
+  .table__header-search {
+    max-width: -webkit-fill-available;
+  }
+  .table {
+    max-width: 500px;
+  }
+  .table__users-list tbody {
+    max-width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .table {
+    max-width: 470px;
+  }
+  .table__users-list tbody {
+    max-width: 470px;
+  }
+}
+@media (max-width: 500px) {
+  .table {
+    max-width: 400px;
+  }
+  .table__users-list tbody {
+    max-width: 400px;
+  }
+}
+@media (max-width: 430px) {
+  .table {
+    max-width: 320px;
+  }
+  .table__users-list tbody {
+    max-width: 320px;
+  }
+}
